@@ -1,5 +1,7 @@
 import os
-os.system("cls || clear") #limpa o terminal
+
+os.system("cls || clear") 
+#limpa o terminal
 
 #solicitando dados
 nome = input("digite seu nome: ") #pedir ao usuario um dado do tipo texto
