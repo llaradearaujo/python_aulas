@@ -16,8 +16,11 @@ print(f"idade: {idade}; nome: {nome}")
 #TRUE = VERDADEIRO
 #FALSE = FALSO
 #IF = SE
+#ELSE = SENÃO
 
 if idade < 18:
     print("menoridade")
+else:
+    print("maioridade")
 
 print("====fim====")
