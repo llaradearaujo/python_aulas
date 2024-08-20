@@ -10,3 +10,14 @@ altura = float(input("digite sua altura: "))#pedir dado do tipo numero real
 print(f"nome: {nome}") #f permite as chaves em torno da variavel, chaves servem para mencionar variavel
 print(f"idade: {idade} anos.")
 print(f"idade: {idade}; nome: {nome}")
+
+#verificando
+
+#TRUE = VERDADEIRO
+#FALSE = FALSO
+#IF = SE
+
+if idade < 18:
+    print("menoridade")
+
+print("====fim====")
