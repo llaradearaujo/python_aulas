@@ -15,3 +15,4 @@ print("LAÇO DE REPETIÇÃO I:")
 for i in range(10,0,-1):
     print(f"conteudo da variável i = {i}")
     time.sleep(1)
+
