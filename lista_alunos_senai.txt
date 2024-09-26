@@ -1,2 +1,2 @@
-lara, 20
-laura, 18
+LAILA, 23
+LUA, 44

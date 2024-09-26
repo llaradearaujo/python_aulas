@@ -18,7 +18,7 @@ quantidade_alunos = 2
 
 lista_alunos = []
 
-print("SOLICITANDO DADOS DE ALUNOS")
+print("\nSOLICITANDO DADOS DE ALUNOS")
 
 for i in range(quantidade_alunos):
     aluno = Aluno(
@@ -27,12 +27,12 @@ for i in range(quantidade_alunos):
     )
     lista_alunos.append(aluno)
 
-print("EXIBINDO DADOS DE ALUNOS")
+print("\nEXIBINDO DADOS DE ALUNOS")
 for aluno in lista_alunos:
     print(f"nome = {aluno.nome}")
     print(f"idade = {aluno.idade}")
 
-
+#------create-------
 #salvando dados do aluno num  arquivo txt
 
 #definindo arquivo para salvar os dados
@@ -46,5 +46,29 @@ with open(nome_do_arquivo, "w") as arquivo_alunos:
         arquivo_alunos.write(f"{aluno.nome}, {aluno.idade}\n")
 
 
+#fechar conexao com arquivo
+arquivo_alunos.close()
 
-print("dados salvos com sucesso!")
+
+print("\ndados salvos com sucesso!")
+
+lista_alunos = []
+
+#------read-------
+#lendo dados de um arquivo
+print("\nACESSANDO DADOS DO ARQUIVO")
+with open(nome_do_arquivo, "r") as arquivo_de_origem:
+    for linha in arquivo_de_origem:
+        nome, idade = linha.strip().split(",")
+        lista_alunos.append(Aluno(nome= nome, idade= int(idade)))
+
+
+
+
+#fechando conexão com arquivo
+arquivo_alunos.close()
+
+print("\nEXIBINDO DADOS DOS ALUNOS DO ARQUIVO")
+for aluno in lista_alunos:
+    print(f"nome: {aluno.nome}")
+    print(f"idade{aluno.idade}")
